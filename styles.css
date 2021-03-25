@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap");
+
+:root {
+  --primary-color: #f2c94c;
+  --text-color: black;
+  --width-break: 600px;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  overflow: hidden;
+}
+
+nav {
+  background-color: var(--primary-color);
+  text-align: center;
+}
+
+textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 50%;
+  min-height: 20vh;
+  font-size: large;
+  font-family: inherit;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+button {
+  background-color: var(--primary-color);
+  border: none;
+  margin: 2rem 21.5rem;
+  padding: 1rem 2rem;
+  font-family: "Noto Sans", sans-serif;
+  font-size: large;
+}
+
+.text {
+  display: block;
+  margin-left: 21.5rem;
+  padding-bottom: 1rem;
+}
+
+#translation-output {
+  display: block;
+  width: 48%;
+  margin-left: 21.5rem;
+  margin-bottom: 2rem;
+  min-height: 10vh;
+  max-height: 20vh;
+  overflow: scroll;
+  border: 1px solid var(--text-color);
+}
+
+div {
+  display: block;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--primary-color);
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+footer p {
+  max-width: var(--width-break);
+  margin: auto;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
