@@ -1,6 +1,7 @@
 var btnTranslate = document.querySelector("#translation-button");
 var translationText = document.querySelector("#translation-input");
 var outputText = document.querySelector("#translation-output");
+var btnPlay = document.querySelector("#translation-button-speak");
 
 var res = "https://api.funtranslations.com/translate/minion.json";
 var URL = encodeURI(res);
@@ -15,6 +16,10 @@ function errorHandler(err) {
   alert("something wrong with the server! try again after some time");
 }
 
+function textSpeak(text) {
+  responsiveVoice.speak(text, "Italian Female");
+}
+
 function clickHandler() {
   var inputText = translationText.value;
   fetch(getTranslationalURL(inputText))
@@ -26,5 +31,9 @@ function clickHandler() {
     .catch(errorHandler);
   translationText.value = "";
 }
+
+btnPlay.addEventListener("click", () => {
+  textSpeak(outputText.innerText);
+});
 
 btnTranslate.addEventListener("click", clickHandler);
