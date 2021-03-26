@@ -85,3 +85,9 @@ p {
   margin-inline-start: 0;
   margin-inline-end: 0;
 }
+
+@media screen and (max-width: 800px) {
+  footer {
+    width: 100%;
+  }
+}
