@@ -9,7 +9,6 @@
 body {
   margin: 0;
   font-family: "Noto Sans", sans-serif;
-  overflow: hidden;
 }
 
 nav {
@@ -17,52 +16,60 @@ nav {
   text-align: center;
 }
 
-textarea {
-  box-sizing: border-box;
+nav div {
   display: block;
-  width: 50%;
-  min-height: 20vh;
-  font-size: large;
-  font-family: inherit;
+}
+
+main {
+  text-align: center;
+}
+
+main textarea {
   margin: auto;
+  margin-top: 2.5rem;
+}
+
+textarea {
+  display: block;
+  height: 20vh;
+  width: 40%;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+main button {
   margin-top: 2rem;
 }
 
 button {
   background-color: var(--primary-color);
-  border: none;
-  margin: 2rem 21.5rem;
-  padding: 1rem 2rem;
-  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  padding: 1rem;
+  font-family: inherit;
   font-size: large;
 }
 
-.text {
-  display: block;
-  margin-left: 21.5rem;
-  padding-bottom: 1rem;
-}
-
 #translation-output {
+  border: 1px solid var(--text-color);
+  text-align: left;
+  box-sizing: border-box;
+  margin: auto;
   display: block;
-  width: 48%;
-  margin-left: 21.5rem;
-  margin-bottom: 2rem;
   min-height: 10vh;
   max-height: 20vh;
+  width: 40%;
+  font-family: inherit;
+  font-size: 1rem;
   overflow: scroll;
-  border: 1px solid var(--text-color);
-}
-
-div {
-  display: block;
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   text-align: center;
   background-color: var(--primary-color);
   bottom: 0;
-  width: 100%;
   padding: 1rem;
 }
 
