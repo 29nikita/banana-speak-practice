@@ -88,6 +88,10 @@ p {
 
 @media screen and (max-width: 800px) {
   footer {
+<<<<<<< HEAD
     width: 90%;
+=======
+    width: 80%;
+>>>>>>> 43b8dcd5f2da15a05d0aa76365cda186031122c1
   }
 }
