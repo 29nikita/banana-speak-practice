@@ -87,6 +87,8 @@ p {
 }
 
 @media screen and (max-width: 800px) {
+  nav,
+  main,
   footer {
     width: 95%;
   }
