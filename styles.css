@@ -104,6 +104,9 @@ p {
 }
 
 @media (min-width: 200px) and (max-width: 800px) {
+  main {
+    margin-top: 2rem;
+  }
   .minion-image {
     display: none;
   }
