@@ -3,7 +3,6 @@
 :root {
   --primary-color: #f2c94c;
   --text-color: black;
-  --width-break: 600px;
 }
 
 body {
@@ -24,12 +23,17 @@ main {
   text-align: center;
 }
 
+.minion-image {
+  height: 25rem;
+  margin-left: 12rem;
+}
+
 main textarea {
   margin: auto;
   margin-top: 2rem;
 }
 
-textarea {
+#translation-input {
   display: block;
   height: 20vh;
   width: 40%;
@@ -41,11 +45,18 @@ main button {
   margin-top: 1rem;
 }
 
-button {
+#translation-button,
+#translation-button-speak {
   background-color: var(--primary-color);
   text-align: center;
   padding: 1rem;
   font-family: inherit;
+  font-size: large;
+}
+
+.paragraph {
+  padding: 1rem;
+  padding-bottom: 0;
   font-size: large;
 }
 
@@ -61,20 +72,26 @@ button {
   font-family: inherit;
   font-size: 1rem;
   overflow: scroll;
+  padding: 1rem;
+  font-size: large;
+}
+
+.about {
+  font-size: x-large;
 }
 
 footer {
   position: fixed;
-  bottom: 0;
   width: 100%;
   text-align: center;
   background-color: var(--primary-color);
   bottom: 0;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 footer p {
-  max-width: var(--width-break);
+  max-width: 600px;
   margin: auto;
 }
 
@@ -86,24 +103,34 @@ p {
   margin-inline-end: 0;
 }
 
-@media screen and (max-width: 1060px) {
-  #primary {
-    width: 67%;
+@media (min-width: 200px) and (max-width: 800px) {
+  .minion-image {
+    display: none;
   }
-  #secondary {
-    width: 30%;
-    margin-left: 3%;
-  }
-}
 
-/* Media Queries: Tabled Portrait */
-@media screen and (max-width: 768px) {
-  #primary {
-    width: 100%;
+  #translation-input {
+    height: 5rem;
+    width: 20rem;
+    font-size: 0.8rem;
   }
-  #secondary {
-    width: 100%;
-    margin: 0;
-    border: none;
+
+  #translation-button,
+  #translation-button-speak {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  .paragraph {
+    margin-top: 1rem;
+  }
+
+  #translation-output {
+    height: 5rem;
+    width: 20rem;
+  }
+
+  footer p {
+    max-width: 400px;
   }
 }
